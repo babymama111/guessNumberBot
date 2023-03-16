@@ -9,6 +9,7 @@ const startGame = async (chatId) =>{
     chats[chatId] = randomNumber
     await bot.sendMessage(chatId,`летс го`, gameOptions)
 }
+
 const start = () =>{
     bot.on('message', async msg => {
         const text = msg.text;
